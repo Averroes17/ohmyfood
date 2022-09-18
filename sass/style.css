@@ -1,7 +1,26 @@
+.sav {
+  background-color: #353434;
+  padding: 5px 20px;
+}
+.sav .fa-solid {
+  color: white;
+  padding-right: 10px;
+  font-size: 10px;
+}
+.sav a {
+  color: white;
+}
+.sav h4 {
+  color: white;
+}
+
 @font-face {
   font-family: "Shrikland";
-  font-family: "Roboto-Regular";
-  src: url("https://fonts.google.com/specimen/Shrikhand");
+  src: url("../fonts/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 a {
   text-decoration: none;
@@ -13,8 +32,9 @@ a {
 }
 
 body {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto";
   flex-direction: column;
+  margin: 0px;
 }
 
 header {
@@ -22,7 +42,6 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  font-family: "Shrikland";
   margin-bottom: 30px;
 }
 
@@ -47,10 +66,10 @@ header {
   padding-bottom: 5px;
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 40px;
 }
-
 .search > input {
   border: none;
   background-color: transparent;
@@ -65,7 +84,6 @@ header {
   align-items: center;
   padding: 10%;
 }
-
 .hero > button {
   border: none;
   border-radius: 9999px;
@@ -80,6 +98,7 @@ header {
 h1 {
   color: black;
   font-size: 20px;
+  font-family: Shrikland;
 }
 
 .catalogue {
@@ -96,14 +115,13 @@ h1 {
   flex-direction: column;
   border-radius: 20px;
   background-color: #fff;
-  margin: 15px;
   overflow: hidden;
   border: 4px solid white;
   box-shadow: 2px 2px 0px 0px rgba(145, 141, 141, 0.1215686275);
-  width: 250px;
+  width: 100%;
   font-family: Roboto;
+  position: relative;
 }
-
 .carte-restaurant > a > img {
   width: 100%;
   aspect-ratio: 2/1;
@@ -138,7 +156,6 @@ h1 {
 .carte-choix :hover {
   color: #9356DC;
 }
-
 .carte-choix > a {
   display: flex;
 }
@@ -171,22 +188,6 @@ p {
   padding-right: 10px;
 }
 
-.sav {
-  background-color: #353434;
-  padding: 5px 20px;
-}
-.sav .fa-solid {
-  color: white;
-  padding-right: 10px;
-  font-size: 10px;
-}
-.sav a {
-  color: white;
-}
-.sav h4 {
-  color: white;
-}
-
 .chiffre {
   background-color: #9356DC;
   width: 25px;
@@ -201,16 +202,19 @@ p {
 
 .restaurants-gastronomiques {
   margin-bottom: 50px;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .nouveau {
   background-color: #99E2D0;
-  aspect-ratio: 3/1;
   display: flex;
   justify-content: space-evenly;
   position: absolute;
-  right: 326px;
-  margin-top: 10px;
+  right: 15px;
+  top: 10px;
   padding: 0px 2px;
   border-radius: 2px;
   box-shadow: 2px 2px 0px 0px rgba(10, 6, 6, 0.28);

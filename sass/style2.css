@@ -1,0 +1,145 @@
+@import './pages/header.css';
+.sav {
+  background-color: #353434;
+  padding: 5px 20px;
+}
+.sav .fa-solid {
+  color: white;
+  padding-right: 10px;
+  font-size: 10px;
+}
+.sav a {
+  color: white;
+}
+.sav h4 {
+  color: white;
+}
+
+@font-face {
+  font-family: "Shrikland";
+  src: url("../fonts/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  flex-direction: column;
+  margin: 0px;
+}
+
+h1 {
+  color: black;
+  font-size: 20px;
+  font-family: Shrikland;
+}
+
+.catalogue {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  gap: 20px;
+  align-items: center;
+  background-color: #faf8f8;
+}
+
+h2 {
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+h3 {
+  margin-bottom: 0;
+  margin-top: 2px;
+  font-size: 15px;
+}
+
+.icon .fa-solid {
+  margin-right: 20px;
+}
+
+.coeur .fa-regular {
+  padding-right: 10px;
+}
+
+.repas {
+  border-radius: 60px 60px 0px 0px;
+  border: 5px solid white;
+  box-shadow: 0px 0px 2px 2px rgba(145, 141, 141, 0.12);
+  width: 100%;
+  position: relative;
+  padding: 10px 25px 0px;
+  margin-top: -90px;
+  background-color: white;
+}
+.repas > h2 {
+  padding-left: 15px;
+  font-size: 20px;
+  border-bottom: 2px solid aqua;
+  border-bottom-width: 2px;
+  width: 50px;
+  font-weight: initial;
+}
+
+.plat {
+  width: 100%;
+  margin-top: 10px;
+  aspect-ratio: 4/3;
+}
+
+.choix-repas {
+  margin-bottom: 20px;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.carte {
+  border-radius: 20px;
+  border: 4px solid white;
+  box-shadow: 0px 0px 2px 2px rgba(145, 141, 141, 0.12);
+  width: 100%;
+  position: relative;
+  padding: 10px 10px 0px;
+}
+
+p.prix {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-plat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px 20px;
+}
+.hero-plat > button {
+  border: none;
+  border-radius: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  color: white;
+  font-size: 20px;
+}
+
+.coeur {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=style2.css.map */
