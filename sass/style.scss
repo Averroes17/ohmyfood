@@ -264,26 +264,26 @@ text {
    height: 100%;
    overflow: hidden;
    position: fixed;
-   animation: slide 10ms ease 3s forwards;
+   animation: slide 10ms ease 990ms forwards;
    z-index: 10;
    display: flex;
    flex-direction: row;
    justify-content: space-around;
    align-items: center;
    background-color: white;
-   background-image: radial-gradient(circle, #9356DC 20%, transparent 10%), radial-gradient(circle, #9356DC 20%, transparent 10%);
+   background-image: radial-gradient(circle, #9356DC 10%, transparent 10%), radial-gradient(circle, #9356DC 10%, transparent 10%);
    background-size: 100px 100px;
    background-position: 0 0, 50px 50px;
 }
 
 .loader {
    border: 10px solid #f3f3f3;
-   border-bottom: 10px solid #3498db;
-   border-top: 10px solid #3498db;
+   border-bottom: 10px solid #FF79DA;
+   border-top: 10px solid #99E2D0;
    border-radius: 50%;
-   width: 120px;
-   height: 120px;
-   animation: spin 1.5s linear infinite;
+   width: 150px;
+   height: 150px;
+   animation: spin 1s linear infinite;
    bottom: 200px;
    right: 150px;
  }
