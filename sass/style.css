@@ -265,6 +265,37 @@ text {
   color: gray;
 }
 
+.loader {
+  border: 10px solid #f3f3f3;
+  border-bottom: 10px solid #3498db;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  position: fixed;
+  bottom: 200px;
+  right: 150px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media only screen and (min-width: 600px) {
   .choix-fonctionnement {
     padding: 20px;
