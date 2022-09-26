@@ -12,4 +12,9 @@
 }
 .sav h4 {
   color: white;
+}
+.sav > p {
+  margin: auto;
+  font-size: 15px;
+  padding: 4px;
 }/*# sourceMappingURL=footer.css.map */

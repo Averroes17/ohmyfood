@@ -13,6 +13,11 @@
 .sav h4 {
   color: white;
 }
+.sav > p {
+  margin: auto;
+  font-size: 15px;
+  padding: 4px;
+}
 
 @font-face {
   font-family: "Shrikland";
@@ -35,6 +40,37 @@ body {
   font-family: "Roboto";
   flex-direction: column;
   margin: 0px;
+}
+
+h1 {
+  color: black;
+  font-size: 20px;
+  font-family: "ROBOTO";
+  text-align: center;
+  font-weight: 900;
+  padding: 0px 60px;
+}
+
+h2 {
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+h3 {
+  margin-bottom: 0;
+  margin-top: 2px;
+  font-size: 15px;
+}
+
+p {
+  margin: auto;
+  font-size: 15px;
+}
+
+.sous-titre {
+  font-size: 15px;
+  text-align: center;
+  color: gray;
 }
 
 header {
@@ -76,29 +112,26 @@ header {
   text-align: center;
 }
 
+.text-search {
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .hero {
-  background-color: #faf8f8;
+  background-color: rgba(255, 255, 255, 0.8784313725);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10%;
+  padding: 20px;
 }
 .hero > button {
   border: none;
-  border-radius: 9999px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  border-radius: 30px;
+  padding: 10px 20px;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   color: white;
-}
-
-h1 {
-  color: black;
-  font-size: 20px;
-  font-family: Shrikland;
+  margin: 30px;
 }
 
 .catalogue {
@@ -119,7 +152,7 @@ h1 {
   border: 4px solid white;
   box-shadow: 2px 2px 0px 0px rgba(145, 141, 141, 0.1215686275);
   width: 100%;
-  font-family: Roboto;
+  font-family: "Roboto";
   position: relative;
 }
 .carte-restaurant > a > img {
@@ -131,61 +164,62 @@ h1 {
 
 .titre-restaurant {
   font-size: 15px;
-  padding-left: 15px;
+  padding: 5px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.fonctionnement {
+.choix-fonctionnement {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .carte-choix {
   border-radius: 20px;
   background-color: #faf8f8;
-  width: 300px;
+  width: 100%;
   display: flex;
   padding-top: 15px;
   padding-bottom: 15px;
   box-shadow: 2px 2px 0px 0px rgba(173, 173, 173, 0.2784313725);
-  margin-bottom: 20px;
 }
-.carte-choix :hover {
-  color: #9356DC;
+.carte-choix:hover {
+  background: #f0e4ff;
 }
-.carte-choix > a {
+.carte-choix i:hover {
+  color: #8533e8;
+}
+
+.search {
+  height: 40px;
   display: flex;
 }
 
-.choix-fonctionnement {
-  display: flex;
+* {
+  box-sizing: border-box;
 }
 
-h2 {
-  padding-left: 15px;
-  font-size: 20px;
-}
-
-h3 {
-  margin-bottom: 0;
-  margin-top: 2px;
-  font-size: 15px;
-}
-
-p {
-  margin-top: 2px;
-  font-size: 15px;
-}
-
-.icon .fa-solid {
-  margin-right: 20px;
+form {
+  display: block;
+  margin-top: 0em;
 }
 
 .coeur .fa-regular {
   padding-right: 10px;
+  position: absolute;
+}
+
+.coeur .fa-solid {
+  opacity: 0;
+  position: relative;
+  bottom: 2px;
+}
+.coeur .fa-solid:hover {
+  opacity: 1;
 }
 
 .chiffre {
@@ -210,13 +244,34 @@ p {
 
 .nouveau {
   background-color: #99E2D0;
-  display: flex;
-  justify-content: space-evenly;
+  display: block;
   position: absolute;
   right: 15px;
   top: 10px;
-  padding: 0px 2px;
+  padding: 5px 10px;
   border-radius: 2px;
   box-shadow: 2px 2px 0px 0px rgba(10, 6, 6, 0.28);
-  width: 80px;
+}
+
+text {
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: 600;
+  padding: 10px;
+  color: black;
+}
+
+.icon {
+  color: gray;
+}
+
+@media only screen and (min-width: 600px) {
+  .choix-fonctionnement {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  h2 {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
