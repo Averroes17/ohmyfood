@@ -270,8 +270,8 @@ text {
   height: 100%;
   overflow: hidden;
   position: fixed;
-  -webkit-animation: slide 1s ease 1s forwards;
-          animation: slide 1s ease 1s forwards;
+  -webkit-animation: slide 1.5s ease 1.5s forwards;
+          animation: slide 1.5s ease 1.5s forwards;
   z-index: 10;
   display: flex;
   flex-direction: row;
@@ -290,8 +290,8 @@ text {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  -webkit-animation: slide 1s ease 1s forwards, spin 1s linear infinite;
-          animation: slide 1s ease 1s forwards, spin 1s linear infinite;
+  -webkit-animation: slide 1.5s ease 1.5s forwards, spin 1.5s linear infinite;
+          animation: slide 1.5s ease 1.5s forwards, spin 1.5s linear infinite;
   bottom: 200px;
   right: 150px;
 }
