@@ -181,7 +181,7 @@ text {
     text-overflow: ellipsis;
 }
 .check{
-    width: 0;
+    width: 70px;
     height: 70px;
     background-color: #99E2D0;
     border-radius: 0 20px 20px 0;
@@ -190,9 +190,13 @@ text {
     justify-content: space-around;
     align-items: center;
     margin-left: 10px;
+    margin-right: -70px;
 }
 
 .carte:hover .check{
-    width: 50px;
+    margin-right: 0px;
+}
+b {
+    width: 20px;
 }
 

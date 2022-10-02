@@ -10,6 +10,7 @@
    src: url("../fonts/Roboto-Regular.ttf");
 }
 
+
 a {
    text-decoration: none;
    color: black;
@@ -51,8 +52,8 @@ h3 {
 p {
    margin: auto;
    font-size: 15px;
- }
- 
+}
+
 .sous-titre {
    font-size: 15px;
    text-align: center;
@@ -180,9 +181,10 @@ header {
       background: #f0e4ff;
 
    }
-   i:hover{
-      color: #8533e8 ;
-  }
+
+   i:hover {
+      color: #8533e8;
+   }
 
 }
 
@@ -208,12 +210,13 @@ form {
 
 .coeur .fa-solid {
    opacity: 0;
-    position: relative;
-    bottom: 2px;
-   &:hover{
+   position: relative;
+   bottom: 2px;
+
+   &:hover {
       opacity: 1;
    }
-   
+
 }
 
 .chiffre {
@@ -255,11 +258,11 @@ text {
    color: black;
 }
 
-.icon{
-   color:gray;
+.icon {
+   color: gray;
 }
 
-.preloader{
+.preloader {
    width: 100%;
    height: 100%;
    overflow: hidden;
@@ -286,22 +289,31 @@ text {
    animation: spin 1s linear infinite;
    bottom: 200px;
    right: 150px;
- }
+}
 
- @keyframes spin {
-   0% { transform: rotate(0deg); }
-   100% { transform: rotate(360deg); }
- }
- @keyframes slide {
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg) ;
+      
+   }
+
+}
+
+@keyframes slide {
    from {
       width: 100%;
       height: 100%;
    }
+
    to {
       width: 0%;
       height: 0%;
    }
- }
+}
 
 
 
