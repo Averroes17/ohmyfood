@@ -135,14 +135,46 @@ h3 {
   align-items: flex-end;
   background: white;
   overflow: hidden;
+  -webkit-animation: disposition 1.5s steps(4);
+          animation: disposition 1.5s steps(4);
 }
 
+@-webkit-keyframes disposition {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes disposition {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .carte-description {
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: flex-end;
   padding: 10px 10px 15px;
+  overflow: auto;
 }
 
 .carte-plat {
@@ -207,8 +239,36 @@ text {
 
 .carte:hover .check {
   margin-right: 0px;
+  transition: 1s;
 }
 
 b {
   width: 20px;
+}
+
+i.fa-solid.fa-circle-check {
+  -webkit-animation: spin 1s linear;
+          animation: spin 1s linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=style2.css.map */

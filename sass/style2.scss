@@ -122,8 +122,24 @@ h3 {
     align-items: flex-end;
     background: white;
     overflow: hidden;
+    animation: disposition 1.5s steps(4);
 }
 
+
+@keyframes disposition{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 
 .carte-description {
@@ -132,7 +148,9 @@ h3 {
     width: 100%;
     align-items: flex-end;
     padding: 10px 10px 15px;
+    overflow: auto;
 }
+
 .carte-plat {
     display: flex;
     flex-direction: column;
@@ -191,12 +209,32 @@ text {
     align-items: center;
     margin-left: 10px;
     margin-right: -70px;
+   
 }
 
 .carte:hover .check{
     margin-right: 0px;
+    transition: 1s;
 }
+
 b {
     width: 20px;
 }
+
+i.fa-solid.fa-circle-check{
+animation: spin 1s linear;
+animation-iteration-count: 1;
+animation-delay: 0.8s;
+}
+
+@keyframes spin {
+    0% {
+       transform: rotate(0deg);
+    }
+ 
+    100% {
+       transform: rotate(360deg);
+    }
+ 
+ }
 

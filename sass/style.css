@@ -290,8 +290,8 @@ text {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
+          animation: spin 3s linear infinite;
   bottom: 200px;
   right: 150px;
 }

@@ -286,7 +286,7 @@ text {
    border-radius: 50%;
    width: 150px;
    height: 150px;
-   animation: spin 1s linear infinite;
+   animation: spin 3s linear infinite ;
    bottom: 200px;
    right: 150px;
 }
@@ -297,8 +297,7 @@ text {
    }
 
    100% {
-      transform: rotate(360deg) ;
-      
+      transform: rotate(360deg);
    }
 
 }
