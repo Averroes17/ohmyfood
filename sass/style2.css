@@ -135,19 +135,13 @@ h3 {
   align-items: flex-end;
   background: white;
   overflow: hidden;
-  -webkit-animation: disposition 1.5s steps(4);
-          animation: disposition 1.5s steps(4);
+  -webkit-animation: disposition 1.5s;
+          animation: disposition 1.5s;
 }
 
 @-webkit-keyframes disposition {
   0% {
     opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -157,12 +151,6 @@ h3 {
 @keyframes disposition {
   0% {
     opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
   }
   100% {
     opacity: 1;
