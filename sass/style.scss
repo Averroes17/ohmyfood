@@ -52,6 +52,7 @@ h3 {
 p {
    margin: auto;
    font-size: 15px;
+   color: white;
 }
 
 .sous-titre {
@@ -120,8 +121,12 @@ header {
       background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
       color: white;
       margin: 30px;
+      &:hover {
+         opacity: 0.5;
+     }
    }
 }
+
 
 .catalogue {
    display: flex;
@@ -176,6 +181,7 @@ header {
    padding-top: 15px;
    padding-bottom: 15px;
    box-shadow: 2px 2px 0px 0px #adadad47;
+   align-items: center;
 
    &:hover {
       background: #f0e4ff;
@@ -222,6 +228,7 @@ form {
 .chiffre {
    background-color: #9356DC;
    width: 25px;
+   height: 25px;
    border-radius: 50px;
    aspect-ratio: 1/1;
    display: flex;
@@ -274,7 +281,7 @@ text {
    justify-content: space-around;
    align-items: center;
    background-color: white;
-   background-image: radial-gradient(circle, #9356DC 10%, transparent 10%), radial-gradient(circle, #9356DC 10%, transparent 10%);
+   background-image: radial-gradient(circle, #9356DC 10%, transparent 10%) , radial-gradient(circle, #9356DC 10%, transparent 10%);
    background-size: 100px 100px;
    background-position: 0 0, 50px 50px;
 }
@@ -316,7 +323,7 @@ text {
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
 
    .choix-fonctionnement {
       padding: 20px;
@@ -327,5 +334,31 @@ text {
    h2 {
       text-align: center;
    }
+
+}
+
+@media only screen and (min-width: 992px) {
+body {
+   max-width: 1400px;
+   margin: auto;
+   width: 100%;
+}
+   .carte-restaurant{
+      flex-basis: calc(50% - 200px);
+   }
+   
+   .restaurants-gastronomiques {
+      margin-bottom: 50px;
+      padding: 30px;
+      gap: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+}
+
+.sav {
+   text-align: center;
+ }
 
 }

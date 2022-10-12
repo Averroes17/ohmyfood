@@ -1,7 +1,7 @@
 @import './Composants/header.css';
 .sav {
   background-color: #353434;
-  padding: 5px 20px;
+  padding: 20px 20px;
 }
 .sav .fa-solid {
   color: white;
@@ -13,8 +13,10 @@
 }
 .sav h4 {
   color: white;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
 }
-.sav > p {
+.sav h4 > p {
   margin: auto;
   font-size: 15px;
   padding: 4px;
@@ -143,14 +145,15 @@ h3 {
   margin-top: -90px;
   background-color: #faf8f8;
 }
-.repas > h2 {
+
+.sous-menu > h2 {
   font-weight: initial;
 }
-.repas > h2::after {
+.sous-menu > h2::after {
   content: "";
   width: 40px;
   height: 2px;
-  background: aqua;
+  background: #99E2D0;
   display: block;
   margin-top: 5px;
 }
@@ -219,8 +222,7 @@ h3 {
   color: white;
   font-size: 20px;
 }
-
-button:hover {
+.hero-plat > button:hover {
   opacity: 0.5;
 }
 
@@ -248,17 +250,17 @@ text {
   height: 70px;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
-  transition: width 0.2s;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-left: 10px;
   margin-right: -70px;
+  transition-duration: 1s;
 }
 
 .carte:hover .check {
   margin-right: 0px;
-  transition: 1s;
+  transition: 1.5s;
 }
 
 b {
@@ -266,9 +268,38 @@ b {
 }
 
 i.fa-solid.fa-circle-check {
-  transition: transform 2s;
+  transition: transform 1s;
 }
 
 .carte:hover i.fa-solid.fa-circle-check {
   transform: rotate(360deg);
+}
+
+@media only screen and (min-width: 968px) {
+  body {
+    width: 100%;
+  }
+  .sav {
+    text-align: center;
+  }
+  .carte {
+    flex-basis: 11.1111111111%;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+  .sous-menu {
+    width: 100%;
+  }
+  .plat {
+    aspect-ratio: 7/2;
+  }
+  .coeur {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
 }/*# sourceMappingURL=style2.css.map */
