@@ -28,9 +28,55 @@
   font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.ttf");
 }
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 a {
   text-decoration: none;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   color: black;
+}
+a:nth-of-type(1) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+a:nth-of-type(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+a:nth-of-type(3) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 * {
@@ -135,27 +181,8 @@ h3 {
   align-items: flex-end;
   background: white;
   overflow: hidden;
-  -webkit-animation: disposition 1.5s;
-          animation: disposition 1.5s;
 }
 
-@-webkit-keyframes disposition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes disposition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .carte-description {
   display: flex;
   justify-content: space-between;
@@ -235,28 +262,9 @@ b {
 }
 
 i.fa-solid.fa-circle-check {
-  -webkit-animation: spin 1s linear;
-          animation: spin 1s linear;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  transition: transform 2s;
 }
 
-@-webkit-keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.carte:hover i.fa-solid.fa-circle-check {
+  transform: rotate(360deg);
 }/*# sourceMappingURL=style2.css.map */

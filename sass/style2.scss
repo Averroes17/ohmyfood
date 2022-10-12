@@ -11,10 +11,30 @@
     src: url("../fonts/Roboto-Regular.ttf");
 }
 
+@mixin inception {
+    @for $i from 1 through 3 { 
+        &:nth-of-type(#{$i}) { 
+            animation-delay: #{$i * .5}s;
+        } 
+    }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  50% { opacity: 0.25;}
+  75% {opacity: 0.50;}
+  100% { opacity: 1; }
+}
+
 a {
     text-decoration: none;
+    animation-name: fade-in;
+	animation-fill-mode: both;
+	animation-duration: .5s;
     color: black;
+    @include inception;
 }
+
 
 * {
     box-sizing: border-box;
@@ -122,18 +142,8 @@ h3 {
     align-items: flex-end;
     background: white;
     overflow: hidden;
-    animation: disposition 1.5s;
 }
 
-
-@keyframes disposition{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 
 
 .carte-description {
@@ -206,7 +216,7 @@ text {
    
 }
 
-.carte:hover .check{
+.carte:hover .check {
     margin-right: 0px;
     transition: 1s;
 }
@@ -215,20 +225,10 @@ b {
     width: 20px;
 }
 
-i.fa-solid.fa-circle-check{
-animation: spin 1s linear;
-animation-iteration-count: 1;
-animation-delay: 0.8s;
+i.fa-solid.fa-circle-check {
+    transition: transform 2s;
 }
 
-@keyframes spin {
-    0% {
-       transform: rotate(0deg);
-    }
- 
-    100% {
-       transform: rotate(360deg);
-    }
- 
- }
-
+.carte:hover i.fa-solid.fa-circle-check{
+ transform: rotate(360deg);
+}
