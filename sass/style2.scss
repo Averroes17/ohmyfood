@@ -236,7 +236,29 @@ i.fa-solid.fa-circle-check {
  transform: rotate(360deg);
 }
  
- @media only screen and (min-width: 968px) {
+@media only screen and (min-width: 768px) and (max-width : 1024px) {
+    .plat {
+       aspect-ratio: 5/2;
+ }
+ .menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .sous-menu {
+    width: 50%;
+}
+.coeur {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+ }
+ }
+
+
+ @media only screen and (min-width: 1024px) {
  body {
     width: 100%;
  }
@@ -244,10 +266,6 @@ i.fa-solid.fa-circle-check {
  .sav {
     text-align: center;
   }
- 
- .carte{
-    flex-basis: calc(100%/9);
- }
 
  .menu {
     display: flex;

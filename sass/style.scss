@@ -121,9 +121,10 @@ header {
       background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
       color: white;
       margin: 30px;
+
       &:hover {
          opacity: 0.5;
-     }
+      }
    }
 }
 
@@ -281,7 +282,7 @@ text {
    justify-content: space-around;
    align-items: center;
    background-color: white;
-   background-image: radial-gradient(circle, #9356DC 10%, transparent 10%) , radial-gradient(circle, #9356DC 10%, transparent 10%);
+   background-image: radial-gradient(circle, #9356DC 10%, transparent 10%), radial-gradient(circle, #9356DC 10%, transparent 10%);
    background-size: 100px 100px;
    background-position: 0 0, 50px 50px;
 }
@@ -293,7 +294,7 @@ text {
    border-radius: 50%;
    width: 150px;
    height: 150px;
-   animation: spin 3s linear infinite ;
+   animation: spin 3s linear infinite;
    bottom: 200px;
    right: 150px;
 }
@@ -323,7 +324,7 @@ text {
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
    .choix-fonctionnement {
       padding: 20px;
@@ -335,18 +336,18 @@ text {
       text-align: center;
    }
 
-}
-
-@media only screen and (min-width: 992px) {
-body {
-   max-width: 1400px;
-   margin: auto;
-   width: 100%;
-}
-   .carte-restaurant{
-      flex-basis: calc(50% - 200px);
+   .carte-restaurant>a>img {
+      aspect-ratio: 5/2;
    }
-   
+
+   body {
+      width: 100%;
+   }
+
+   .carte-restaurant {
+      flex-basis: calc(50% - 10px);
+   }
+
    .restaurants-gastronomiques {
       margin-bottom: 50px;
       padding: 30px;
@@ -355,10 +356,44 @@ body {
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: center;
-}
-
-.sav {
-   text-align: center;
- }
+   }
 
 }
+
+
+
+
+
+   @media only screen and (min-width: 1024px) {
+      body {
+         width: 100%;
+      }
+
+      .choix-fonctionnement {
+         padding: 20px;
+         display: flex;
+         flex-direction: row;
+      }
+
+      h2 {
+         text-align: center;
+      }
+
+      .carte-restaurant {
+         flex-basis: calc(50% - 80px);
+      }
+
+      .restaurants-gastronomiques {
+         margin-bottom: 50px;
+         padding: 30px;
+         gap: 20px;
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row;
+         justify-content: center;
+      }
+
+      .sav {
+         text-align: center;
+      }
+   }

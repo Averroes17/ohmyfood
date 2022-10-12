@@ -341,7 +341,7 @@ text {
     height: 0%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .choix-fonctionnement {
     padding: 20px;
     display: flex;
@@ -350,15 +350,39 @@ text {
   h2 {
     text-align: center;
   }
-}
-@media only screen and (min-width: 992px) {
+  .carte-restaurant > a > img {
+    aspect-ratio: 5/2;
+  }
   body {
-    max-width: 1400px;
-    margin: auto;
     width: 100%;
   }
   .carte-restaurant {
-    flex-basis: calc(50% - 200px);
+    flex-basis: calc(50% - 10px);
+  }
+  .restaurants-gastronomiques {
+    margin-bottom: 50px;
+    padding: 30px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+  }
+  .choix-fonctionnement {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  h2 {
+    text-align: center;
+  }
+  .carte-restaurant {
+    flex-basis: calc(50% - 80px);
   }
   .restaurants-gastronomiques {
     margin-bottom: 50px;
