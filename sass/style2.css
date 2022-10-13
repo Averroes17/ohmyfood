@@ -239,10 +239,11 @@ h3 {
   top: 30px;
 }
 
-text {
+p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin: 0;
 }
 
 .check {
