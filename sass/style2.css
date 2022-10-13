@@ -295,6 +295,9 @@ i.fa-solid.fa-circle-check {
     justify-content: center;
     gap: 30px;
   }
+  .sav {
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 1024px) {
   body {
