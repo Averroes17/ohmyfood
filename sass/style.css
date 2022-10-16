@@ -175,6 +175,10 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.titre-restaurant p {
+  -webkit-margin-before: 5px;
+          margin-block-start: 5px;
+}
 
 .choix-fonctionnement {
   display: flex;
@@ -367,6 +371,9 @@ form {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+  }
+  .sav {
+    text-align: center;
   }
 }
 @media only screen and (min-width: 1024px) {
