@@ -96,10 +96,9 @@ h3 {
  }
 
 .repas {
-    border-radius: 60px 60px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
     width: 100%;
     position: relative;
-    padding: 10px 25px 0px;
     margin-top: -90px;
     background-color: #faf8f8;
 }
@@ -126,7 +125,7 @@ h3 {
 
 .choix-repas {
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 10px;
     gap: 20px;
     display: flex;
     flex-direction: column;
@@ -192,6 +191,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0px 15px;
 }
 
 .fleche {
@@ -222,7 +222,7 @@ p {
 
 .carte:hover .check {
     margin-right: 0px;
-    transition: 1.5s;
+    transition: 1s;
 }
 
 b {

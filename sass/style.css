@@ -14,11 +14,13 @@
   color: white;
   -webkit-margin-before: 0;
           margin-block-start: 0;
+  font-family: "Shrikland";
+  font-weight: 500;
 }
-.sav h4 > p {
-  margin: auto;
+.sav p {
   font-size: 15px;
   padding: 4px;
+  margin: 0px;
 }
 
 @font-face {
@@ -88,7 +90,7 @@ header {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  box-shadow: 0px 15px 10px -15px #111;
+  box-shadow: -1px -3px 9px 0px #111;
   z-index: 50;
   display: flex;
 }
@@ -116,12 +118,12 @@ header {
 }
 
 .text-search {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .hero {
-  background-color: rgba(255, 255, 255, 0.8784313725);
+  background-color: rgba(237, 237, 237, 0.8784313725);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -131,10 +133,10 @@ header {
 .hero > button {
   border: none;
   border-radius: 30px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   color: white;
-  margin: 30px;
+  margin: 15px 30px 30px;
 }
 .hero > button:hover {
   opacity: 0.5;
@@ -261,13 +263,14 @@ form {
   padding: 5px 10px;
   border-radius: 2px;
   box-shadow: 2px 2px 0px 0px rgba(10, 6, 6, 0.28);
+  color: green;
 }
 
 .icon p {
   font-size: 15px;
   font-family: "Roboto";
   font-weight: 600;
-  padding: 10px;
+  padding: 10px 25px;
   color: black;
 }
 
