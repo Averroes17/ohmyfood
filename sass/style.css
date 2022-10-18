@@ -230,7 +230,7 @@ form {
   bottom: 2px;
   transition-property: opacity;
   transition-duration: 2s;
-  transition-delay: 0.2s;
+  transition-delay: 0.01s;
 }
 .coeur .fa-solid:hover {
   opacity: 1;
